@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-KEY = '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'
+KEY = ''
 
 client = OpenAI(api_key=KEY)
 ids = ['batch_66f56a9d1d5081909e0a58eebc3cf169',
