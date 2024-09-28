@@ -3,7 +3,7 @@ import pandas as pd
 
 from openai import OpenAI
 
-KEY = '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'
+KEY = ''
 output_file_names = [
     'file-v8AfvBUuvgI5xdqho2NRMuQp',
     'file-arZOCg16QiEHttRxA6NBXJTg',
