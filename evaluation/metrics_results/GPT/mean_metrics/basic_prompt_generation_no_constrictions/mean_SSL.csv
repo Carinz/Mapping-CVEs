@@ -1,0 +1,7 @@
+Metric,Value
+Table Type,SSL
+Mean Jaccard,0.5
+Mean Precision,0.5
+Mean Recall,0.5862068965517241
+Mean F1,0.528735632183908
+Number Samples,29

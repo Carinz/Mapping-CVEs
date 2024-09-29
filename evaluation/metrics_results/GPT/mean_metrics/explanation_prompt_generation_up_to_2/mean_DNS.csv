@@ -1,0 +1,7 @@
+Metric,Value
+Table Type,DNS
+Mean Jaccard,0.47619047619047616
+Mean Precision,0.47619047619047616
+Mean Recall,0.5714285714285714
+Mean F1,0.5079365079365079
+Number Samples,42

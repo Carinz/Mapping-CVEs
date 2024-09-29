@@ -1,0 +1,7 @@
+Metric,Value
+Table Type,FTP
+Mean Jaccard,0.5357142857142857
+Mean Precision,0.5357142857142857
+Mean Recall,0.7142857142857143
+Mean F1,0.5809523809523809
+Number Samples,7

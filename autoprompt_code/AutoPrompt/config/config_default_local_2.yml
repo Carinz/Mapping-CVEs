@@ -1,0 +1,56 @@
+use_wandb: True
+dataset:
+    name: 'two_protocols_dataset'
+    records_path: 'dataset/two_protocols_dataset.csv'
+    initial_dataset: 'dataset/two_protocols_dataset.csv'
+    label_schema: ['ARP', 'BGP', 'ICMP', 'POP3', 'DHCP', 'DNS', 'FTP', 'SMTP', 'SSL', 'SSH', 'DNS, DHCP', 'FTP, SSL', 'SMTP, POP3', 'SSH, ARP', 'ICMP, BGP', 'None']
+    max_samples: 34
+    semantic_sampling: False
+
+annotator:
+    method : 'argilla'
+    config:
+        api_url: 'https://dorsimantov-workshop.hf.space'
+        api_key: 'admin.apikey'
+        workspace: 'admin'
+        time_interval: 5
+
+predictor:
+    method : 'llm'
+    config:
+        llm:
+            type: 'HuggingFacePipeline'
+            name: 'microsoft/Phi-3-mini-4k-instruct'
+            model_kwargs: {"trust_remote_code": True}
+            max_new_tokens: 25
+        num_workers: 5
+        prompt: 'prompts/predictor_completion/prediction.prompt'
+        mini_batch_size: 1  #change to >1 if you want to include multiple samples in the one prompt
+        mode: 'prediction'
+
+meta_prompts:
+    folder: 'prompts/meta_prompts_classification'
+    num_err_prompt: 1  # Number of error examples per sample in the prompt generation
+    num_err_samples: 2 # Number of error examples per sample in the sample generation
+    history_length: 4 # Number of sample in the meta-prompt history
+    num_generated_samples: 2 # Number of generated samples at each iteration
+    num_initialize_samples: 4 # Number of generated samples at iteration 0, in zero-shot case
+    samples_generation_batch: 10 # Number of samples generated in one call to the LLM
+    num_workers: 5 #Number of parallel workers
+    warmup: 1 # Number of warmup steps
+
+eval:
+    function_name: 'jaccard'
+    num_large_errors: 4
+    num_boundary_predictions : 0
+    error_threshold: 0.5
+
+llm:
+    type: 'OpenAI'
+    name: 'gpt-4-1106-preview' # This is the meta-prompt LLM, it should be a strong model. For example, using GPT-3.5 will cause an error in many cases.
+    temperature: 0.8
+
+stop_criteria:
+    max_usage: 0.5 #In $ in case of OpenAI models, otherwise number of tokens
+    patience: 3 # Number of patience steps
+    min_delta: 0.01 # Delta for the improvement definition
