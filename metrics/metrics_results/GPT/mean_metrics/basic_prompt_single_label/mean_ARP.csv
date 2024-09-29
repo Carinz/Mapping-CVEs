@@ -1,0 +1,7 @@
+Metric,Value
+Table Type,ARP
+Mean Jaccard,0.8
+Mean Precision,0.8
+Mean Recall,0.8
+Mean F1,0.8
+Number Samples,5

@@ -1,0 +1,7 @@
+Metric,Value
+Table Type,1_protocol
+Mean Jaccard,0.5179372197309418
+Mean Precision,0.5179372197309418
+Mean Recall,0.695067264573991
+Mean F1,0.5745889387144992
+Number Samples,223

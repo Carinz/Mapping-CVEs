@@ -1,0 +1,7 @@
+Metric,Value
+Table Type,DHCP
+Mean Jaccard,0.8289473684210527
+Mean Precision,0.8289473684210527
+Mean Recall,0.9210526315789473
+Mean F1,0.8552631578947368
+Number Samples,38
