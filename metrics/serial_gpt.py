@@ -4,8 +4,8 @@ import time
 import openai
 import pandas as pd
 
-openai.api_key = 'sk-proj-PvMATucabxOxTm6md5L3T3BlbkFJoVROXbcos0sgYFWSn2pF'
-# openai.api_key = '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'
+openai.api_key = ''
+# openai.api_key = ''
 
 prompt_experiments = [
     # In your answer only state your final protocol or protocols
