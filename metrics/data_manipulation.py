@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+protocols = ['DNS', 'DHCP', 'ICMP', 'BGP', 'SMTP', 'POP3', 'SSH', 'ARP', 'FTP', 'SSL']
 
 
 def create_tables_per_protocol():
@@ -108,26 +109,9 @@ def count_unique_cve_ids(df):
 
 
 # df = pd.read_csv('all.csv')
-df = pd.read_csv('final_all.csv', encoding='ISO-8859-1')
+df = pd.read_csv('data after manipulation/final_all.csv', encoding='ISO-8859-1')
 df['Protocol'] = df['Protocol'].fillna('None')
-protocols = df['Protocol'].unique()
+# protocols = df['Protocol'].unique()
 
-# create_has_other_protocol_in_description()
-create_hard_samples()
-# create_n_samples_for_autoprompt()
 
-# group_by_cve_id(df)
 
-# cancel_duplicates(df)
-# print(count_unique_cve_ids(df))
-# print(check_unique_cve_id(df))
-# cancel_duplicates(df)
-
-# print(protocols)
-# create_has_other_protocol_in_description()
-# create_one_protocol_samples()
-# df.to_csv('all_samples.csv', index=False)
-# create_tables_per_protocol()
-# create_hard_samples()
-
-# equal_tables()
