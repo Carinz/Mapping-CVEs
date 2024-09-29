@@ -1,7 +1,0 @@
-Metric,Value
-Table Type,BGP
-Mean Jaccard,1.0
-Mean Precision,1.0
-Mean Recall,1.0
-Mean F1,1.0
-Number Samples,6

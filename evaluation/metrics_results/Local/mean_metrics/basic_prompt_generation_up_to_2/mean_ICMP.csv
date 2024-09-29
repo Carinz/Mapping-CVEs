@@ -1,7 +1,0 @@
-Metric,Value
-Table Type,ICMP
-Mean Jaccard,0.37731481481481477
-Mean Precision,0.37731481481481477
-Mean Recall,0.5833333333333334
-Mean F1,0.4416666666666666
-Number Samples,36

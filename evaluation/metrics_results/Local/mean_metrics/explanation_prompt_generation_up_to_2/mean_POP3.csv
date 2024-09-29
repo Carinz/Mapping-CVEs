@@ -1,7 +1,0 @@
-Metric,Value
-Table Type,POP3
-Mean Jaccard,0.375
-Mean Precision,0.375
-Mean Recall,0.75
-Mean F1,0.5
-Number Samples,4

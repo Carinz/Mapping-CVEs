@@ -1,7 +1,0 @@
-Metric,Value
-Table Type,FTP
-Mean Jaccard,0.5
-Mean Precision,0.5
-Mean Recall,1.0
-Mean F1,0.6666666666666666
-Number Samples,7

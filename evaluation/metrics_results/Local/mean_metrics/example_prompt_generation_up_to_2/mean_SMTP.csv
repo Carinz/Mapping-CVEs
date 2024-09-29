@@ -1,7 +1,0 @@
-Metric,Value
-Table Type,SMTP
-Mean Jaccard,0.38888888888888884
-Mean Precision,0.38888888888888884
-Mean Recall,0.5
-Mean F1,0.423611111111111
-Number Samples,24

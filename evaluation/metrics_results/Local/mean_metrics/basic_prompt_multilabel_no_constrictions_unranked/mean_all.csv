@@ -1,7 +1,0 @@
-Metric,Value
-Table Type,all
-Mean Jaccard,0.9010515873015873
-Mean Precision,0.9035515873015874
-Mean Recall,0.9525
-Mean F1,0.9162916666666666
-Number Samples,400

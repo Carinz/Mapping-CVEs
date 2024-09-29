@@ -1,7 +1,0 @@
-Metric,Value
-Table Type,SSH
-Mean Jaccard,0.47395833333333326
-Mean Precision,0.47395833333333326
-Mean Recall,0.84375
-Mean F1,0.59375
-Number Samples,32
