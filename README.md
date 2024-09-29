@@ -41,10 +41,13 @@ In order to get to the point of final 400 samples (metrics/data after manipulati
 
 # GPT Experiments
 In the 'metrics' folder there are scripts you need to run one after the other to have GPT responses of all experiments:
-- `create_requests_file.py` creates all json files of all the experiments, (to sent do GPT through the API). the files are created in folder 'requests_jsonl'. The data is taken from folder "data after manipulation/final_all.csv"
+- `create_requests_file.py` creates all json files of all the experiments, (to sent do GPT through the API). the files are created in folder 'requests_jsonl'. The data is taken from folder "data after manipulation/final_all.csv".
+- 
 - `create_batch.py` creates batches (GPT runs in the background) to all experiments. need to uncomment the specific experiment type you want to create the batch for, then save the batch_id which is printed.
+- 
 - `check_batch.py` checks the status of the batches according to their ids (the id taken from create_batch step) and outputs all the output_file ids for the next step. (this step completes its run successfully only when all the batches are completed).
-- `retrieve_batch.py` takes all output_file ids from the previous step and translates the GPT responses to csv tables according to the experiments names. all experiments are saved in folder 'batch_experiments'
+- 
+- `retrieve_batch.py` takes all output_file ids from the previous step and translates the GPT responses to csv tables according to the experiments names. All experiments are saved in folder 'batch_experiments'.
 
 # Metrics
 In "metrics" folder there is `metrics.py` script, before running it make sure there are all the experiments in 'batch_experiments' folder (which are GPT responses) and all the experiments in 'local_experiments' which are all the responses of the local model.
