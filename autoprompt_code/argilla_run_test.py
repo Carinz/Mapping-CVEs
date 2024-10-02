@@ -3,16 +3,16 @@ import argilla as rg
 from huggingface_login import HF_TOKEN
 
 # TODO: Remove secrets before submission! Can add credentials to git instead!
-HF_TOKEN = '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'
+HF_TOKEN = ''
 # Set credentials
 # client = rg.Argilla(
 #     api_url="https://dorsimantov-workshop_new.hf.space",
-#     api_key="0AkniWXel9FmxlR_ikUJvDkvvzvefUnqY_uDmgYtPN1qfA3eRf3xUmv5jJMmpdEqhCp9n1LgaJ1ptgoi1MA4FGLmxsAnaDkl0y3HuUiXM8g"
+#     api_key=""
 # )
 
 rg.init(
   api_url="https://dorsimantov-workshop.hf.space",
-  api_key="Qc-5kE5YgjJzSPw1j-eZaF5hN2XAs1p6X5hWnJsGgR1pr2Le_BPlea-c-vdTap-Me_sMGF3RFnPSUY12Yr6J_4Xjy-mbHQAkkOPLMqT6OvM",
+  api_key="",
   # extra_headers={"Authorization": f"Bearer {HF_TOKEN}"}
   )
 
