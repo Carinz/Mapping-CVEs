@@ -1,5 +1,5 @@
 # Set up your OpenAI API key
-KEY = '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'
+KEY = ''
 
 from openai import OpenAI
 client = OpenAI(api_key = KEY)
